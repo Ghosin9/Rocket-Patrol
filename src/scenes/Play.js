@@ -127,10 +127,14 @@ class Play extends Phaser.Scene {
     }
 
     shipExplode(ship) {
+        //change transparency to 0
         ship.alpha = 0;
+        //add the the animation at the location where the ship was hit
         let boom = this.add.sprite(ship.x, ship.y, "explosion").setOrigin(0, 0);
+        //play sounds and animations
         boom.anims.play("explode");
         this.sound.play("sfx_explosion");
+        //move the ship back to right side and make visible
         boom.on("animationcomplete", () => {
             ship.reset();
             ship.alpha = 1;
