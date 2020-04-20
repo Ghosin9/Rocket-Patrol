@@ -50,6 +50,9 @@ class Menu extends Phaser.Scene {
         menuConfig.color = '#000';
         this.add.text(centerX, centerY + textSpacer*2, 'Press ← for Easy or → for Hard', menuConfig).setOrigin(0.5);
 
+        //highscore display
+        this.highScoreDisplay = this.add.text(centerX, centerY + textSpacer*3, "High Score: " + highScore, menuConfig).setOrigin(0.5);
+
         //defining keyboard inputs for menu selection
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);

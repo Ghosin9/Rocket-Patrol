@@ -8,10 +8,10 @@
 // Display the time remaining (in seconds) on the screen (15)
 // Create 4 new explosion SFX and randomize which one plays on impact (15)
 // Create a new scrolling tile sprite for the background (10)
+// Track a high score that persists across scenes and display it in the UI (10)
+// Create your own mod and justify its score (🤷🏻‍♂️) (text display on hit with +score) (15)
 // TO BE ADDED --------------------------------------------------------------------------------------------------------
 // Add your own (copyright-free) background music to the Play scene (10)
-// Track a high score that persists across scenes and display it in the UI (10)
-// Create your own mod and justify its score (🤷🏻‍♂️) (text display on hit with +score)
 
 //default window settings
 let config = {
@@ -35,3 +35,6 @@ game.settings = {
 let keyF, keyLEFT, keyRIGHT;
 //p2
 let keyF2, keyLEFT2, keyRIGHT2;
+
+//highscore
+let highScore = 0;
