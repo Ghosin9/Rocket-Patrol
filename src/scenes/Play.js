@@ -243,6 +243,11 @@ class Play extends Phaser.Scene {
             return;
         }
 
+        if(p == this.p1Rocket)
+            this.textConfig1.color = "#0000FF";
+        else
+        this.textConfig1.color = "#FF0000FF";
+
         this.text1 = this.add.text(p.x, p.y, "+ " + ship.points, this.textConfig1).setOrigin(0, 0);
         this.texting = true;
         this.time.delayedCall(500, () => {
@@ -253,6 +258,11 @@ class Play extends Phaser.Scene {
 
     textOnExplode2(ship, p)
     {
+        if(p == this.p1Rocket)
+            this.textConfig1.color = "#0000FF";
+        else
+            this.textConfig1.color = "#FF0000FF";
+
         this.text2 = this.add.text(p.x, p.y, "+ " + ship.points, this.textConfig1).setOrigin(0, 0);
         this.time.delayedCall(500, () => {
             this.text2.destroy();
