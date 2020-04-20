@@ -38,7 +38,7 @@ class Play extends Phaser.Scene {
 
         //define keyboard keys
         //p1
-        keyF = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+        keyF = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
         this.p1Rocket.fire = keyF;
@@ -46,7 +46,7 @@ class Play extends Phaser.Scene {
         this.p1Rocket.right = keyRIGHT;
 
         //p2
-        keyF2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.NUMPAD_ZERO);
+        keyF2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
         keyLEFT2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
         keyRIGHT2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
         this.p2Rocket.fire = keyF2;

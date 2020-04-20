@@ -40,11 +40,11 @@ class Menu extends Phaser.Scene {
         this.add.text(centerX, centerY - textSpacer*3, "120 PATROL", menuConfig).setOrigin(0.5);
         menuConfig.color = "#0000FF";
         this.add.text(centerX, centerY - textSpacer*2, "Player 1: Use AD to move", menuConfig).setOrigin(0.5);
-        this.add.text(centerX, centerY - textSpacer, '& (Space) to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY - textSpacer, '& (W) to Fire', menuConfig).setOrigin(0.5);
 
         menuConfig.color = "#FF0000";
         this.add.text(centerX, centerY, "Player 2: Use ←→ arrows to move", menuConfig).setOrigin(0.5);
-        this.add.text(centerX, centerY + textSpacer, '& (NUMPAD 0) to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY + textSpacer, '& (↑) to Fire', menuConfig).setOrigin(0.5);
 
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
